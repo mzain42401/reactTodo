@@ -34,46 +34,39 @@ html {
   text-transform: capitalize;
   font-weight: bolder;
 }
-
-input {
-  /* display: block; */
-  min-width: 40rem;
-  height: 3.4rem;
-  padding: 2rem 1.2rem;
-  font-size: 1.8rem;
-  line-height: 1.42857143;
-  margin-top: 2rem;
-  color: rgb(58, 57, 57);
-  background-color: #fff;
-  background-image: none;
-  border: 0.1rem solid #ccc;
-  border-radius: 0.4rem;
-  /* -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%); */
-  /* box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%); */
-  box-shadow: 0px 0px 10px gray;
-  /* transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; */
+.addItems{
+  position: relative;
+  width: 400px;
+  margin-top: 30px;
 }
-
-input,
-input:focus,
-input:active,
-input:active:focus {
-  border: none;
-  padding: 2.3rem 1.5rem;
-  outline: none;
+.inpt {
+  padding: 1.2rem 1rem;
   
-}
-input {
-  -webkit-box-shadow: none;
-  /* box-shadow: none; */
+  width: 90%;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px gray;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+
 }
-input:focus {
-  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+.addItemsbtn,.editItemsbtn{
+  color: #007fff;
+  font-size: 25px;
+
+  position: absolute;
+  cursor: pointer;
+  right: 25px;
+  top: 50%;
+  transform: translate(0,-50%);
+  
+
 }
+.addItemsbtn:hover,.editItemsbtn:hover{
+  color: #000;
+}
+
+
 .red{
   background-color: red;
   color: #fff;
@@ -114,11 +107,11 @@ input:focus {
 
 .eachItem {
   background: #fff;
+  margin-left: 20px;
   padding: 1.2rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 0.7rem;
-  margin-left: 1rem;
-  min-width: 40rem;
+  width: 360px;
   word-break: break-word;
   background: #007fff;
   border: 1px solid #007fff;
@@ -158,24 +151,8 @@ input:focus {
   margin-left: -3.5rem;
 } */
 
-.addItems{
-  position: relative;
-}
-.addItemsbtn,.editItemsbtn{
-  color: #007fff;
-  height: 50px;
-  width: 25px;
-  position: absolute;
-  top: 25%;
-  right:  0%;
-  transform: translate(-50%);
-  cursor: pointer;
-  
 
-}
-.addItemsbtn:hover,.editItemsbtn:hover{
-  color: #000;
-}
+
 /*  Please Subscribe to ThapaTechnical Youtube Channel
 /* Click Here: https://www.youtube.com/thapatechnical  */
 
@@ -220,3 +197,18 @@ input:focus {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .inpt {
+    width: 300px;
+  }
+  .eachItem{
+    width: 300px;
+margin-left: 50px;
+  }
+  .addItemsbtn,.editItemsbtn{
+    
+    right: 55px;
+    
+  
+  }
+}

@@ -84,7 +84,7 @@ setItems(filterElem)
                     </figure>
 
                     <div className="addItems">
-                        <input className={toggleSubmit ? "whitebbackroung" : "red"} type="text" placeholder=" Add Items..."
+                        <input className={`inpt ${toggleSubmit ? "whitebbackroung" : "red"}`} type="text" placeholder=" Add Items..."
                            value={inputData} 
                            onChange={(e) => setInputData(e.target.value) }
                         />
